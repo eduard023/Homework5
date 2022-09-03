@@ -2,11 +2,11 @@ import java.util.SimpleTimeZone;
 
 public class Main {
     public static void main(String[] args) {
-        task1();
+        //task1();
         task2();
-        task3();
-        task4();
-        task5();
+        //task3();
+        //task4();
+        //task5();
 
     }
     private static void task1(){
@@ -24,15 +24,15 @@ public class Main {
         //Задача 2
         System.out.println("Задание 2:");
         int clientDeviceYear = 2015;
-        int clientOS = 1; // 1 = IOS / 0 = Android
+        int clientOS = 1; // 0 = IOS / 1 = Android
         if (clientDeviceYear >= 2015 && clientOS == 1){
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientDeviceYear >= 2015 && clientOS == 0){
             System.out.println("Установите версию приложения для iOS по ссылке");
         }else if (clientDeviceYear < 2015 && clientOS == 1){
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }else {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }else {
+            System.out.println("Установите облегченную версию приложения для IOS по ссылке");
         }
     }
 
